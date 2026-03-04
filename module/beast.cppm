@@ -68,16 +68,18 @@ export namespace boost::beast {
     using boost::beast::executor_type;
     using boost::beast::has_get_executor;
     using boost::beast::is_async_read_stream;
-    template <class T>
-    using is_async_stream = std::integral_constant<bool,
-        is_async_read_stream<T>::value && is_async_write_stream<T>::value>;
+    using boost::beast::is_async_stream;
+    // template <class T>
+    // using is_async_stream = std::integral_constant<bool,
+    //     is_async_read_stream<T>::value && is_async_write_stream<T>::value>;
     using boost::beast::is_async_write_stream;
     
     using boost::beast::is_file;
     using boost::beast::is_sync_read_stream;
-    template <class T>
-    using is_sync_stream = std::integral_constant<bool,
-        is_sync_read_stream<T>::value && is_sync_write_stream<T>::value>;
+    using boost::beast::is_sync_stream;
+    // template <class T>
+    // using is_sync_stream = std::integral_constant<bool,
+    //     is_sync_read_stream<T>::value && is_sync_write_stream<T>::value>;
     using boost::beast::is_sync_write_stream;
     // using boost::beast::lowest_layer_type;
 

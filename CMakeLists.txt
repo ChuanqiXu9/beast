@@ -170,7 +170,7 @@ endif ()
 #
 #-------------------------------------------------
 if (BOOST_BEAST_BUILD_MODULES)
-    add_subdirectory(modules)
+    add_subdirectory(module)
 endif ()
 
 #-------------------------------------------------
